@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>聯盟戰棋（TFT）陣容與營運百科</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/filter.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header-inner">
+      <div class="header-title-row">
+        <h1 class="site-title">聯盟戰棋（TFT）陣容與營運百科</h1>
+        <span class="version-badge">Set 18 Meta</span>
+      </div>
+      <p class="site-subtitle">精選當前賽季主流上分陣容、升等經濟節奏與三神裝搭配，方便於遊戲讀取與對局空檔快速查閱。</p>
+    </div>
+  </header>
+
+  <div class="container">
+    <nav class="filter-bar" aria-label="陣容篩選器">
+      <div class="filter-group" role="group" aria-label="強度篩選">
+        <span class="filter-label">陣容強度</span>
+        <button type="button" class="filter-btn active" data-filter-type="tier" data-filter-value="all">全部</button>
+        <button type="button" class="filter-btn" data-filter-type="tier" data-filter-value="S">S 級</button>
+        <button type="button" class="filter-btn" data-filter-type="tier" data-filter-value="A">A 級</button>
+      </div>
+      <div class="filter-group" role="group" aria-label="營運節奏篩選">
+        <span class="filter-label">營運節奏</span>
+        <button type="button" class="filter-btn active" data-filter-type="style" data-filter-value="all">全部</button>
+        <button type="button" class="filter-btn" data-filter-type="style" data-filter-value="速八營運">速八營運</button>
+        <button type="button" class="filter-btn" data-filter-type="style" data-filter-value="低費賭狗">低費賭狗</button>
+        <button type="button" class="filter-btn" data-filter-type="style" data-filter-value="轉職上限">轉職上限</button>
+      </div>
+    </nav>
+
+    <main class="comp-grid">
+      <article class="comp-card" data-tier="S" data-style="速八營運">
+        <div class="card-top">
+          <span class="badge tier-s">S 級</span>
+          <span class="tag">速八營運</span>
+        </div>
+        <h2 class="card-title"><a href="comps/fast8-ryze.html">學者次元雷茲</a></h2>
+        <p class="card-desc">以 4 學者高頻回魔搭配 6 次元門持續輸出，穩健經濟速衝 8 人口，後期靠雙五費把控上限。</p>
+        <div class="card-units">
+          <span class="unit-chip cost-4">雷茲</span>
+          <span class="unit-chip cost-4">塔里克</span>
+          <span class="unit-chip cost-5">諾拉與悠咪</span>
+        </div>
+      </article>
+
+      <article class="comp-card" data-tier="S" data-style="轉職上限">
+        <div class="card-top">
+          <span class="badge tier-s">S 級</span>
+          <span class="tag">轉職上限</span>
+        </div>
+        <h2 class="card-title"><a href="comps/emblem-kalista.html">9 妖精轉職卡莉斯塔</a></h2>
+        <p class="card-desc">取得雙妖精轉職後速衝 9 人口開出 9 妖精大羈絆，依靠雙專屬神裝卡莉斯塔與洛稱霸後期。</p>
+        <div class="card-units">
+          <span class="unit-chip cost-4">卡莉斯塔</span>
+          <span class="unit-chip cost-4">洛</span>
+          <span class="unit-chip cost-5">米里歐</span>
+        </div>
+      </article>
+
+      <article class="comp-card" data-tier="A" data-style="低費賭狗">
+        <div class="card-top">
+          <span class="badge tier-a">A 級</span>
+          <span class="tag">低費賭狗</span>
+        </div>
+        <h2 class="card-title"><a href="comps/reroll-tristana.html">精靈槍手崔絲塔娜</a></h2>
+        <p class="card-desc">於 6 人口卡 50 元利息慢 D 追三星崔絲塔娜與三星藍寶，憑藉精靈專屬裝備在中期強勢壓制。</p>
+        <div class="card-units">
+          <span class="unit-chip cost-2">崔絲塔娜</span>
+          <span class="unit-chip cost-2">藍寶</span>
+          <span class="unit-chip cost-3">吉茵珂絲</span>
+        </div>
+      </article>
+    </main>
+
+    <p id="empty-state" class="empty-state is-hidden">目前沒有符合此篩選條件的陣容，請嘗試切換強度或營運節奏標籤。</p>
+  </div>
+
+  <footer class="site-footer">
+    聯盟戰棋（TFT）陣容與營運百科 — 模組化靜態攻略架構
+  </footer>
+</body>
+</html>
