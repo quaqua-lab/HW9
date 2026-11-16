@@ -619,3 +619,121 @@ a:hover {
     font-size: 0.88rem;
   }
 }
+
+/* ===== 全站頂部導覽列 ===== */
+.site-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-top: 1.15rem;
+}
+
+.nav-link {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.45rem 1rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-color);
+  background-color: var(--bg-primary);
+  color: var(--text-secondary);
+  font-size: 0.92rem;
+  font-weight: 700;
+  transition: all 0.18s ease;
+}
+
+.nav-link:hover {
+  border-color: var(--accent-hex);
+  color: var(--text-primary);
+}
+
+.nav-link.active {
+  background-color: rgba(56, 189, 248, 0.15);
+  border-color: var(--accent-hex);
+  color: var(--accent-hex);
+}
+
+/* ===== 羈絆與裝備圖鑑頁面 ===== */
+.encyclopedia-section {
+  margin-top: 1.75rem;
+}
+
+.encyclopedia-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+  gap: 1.1rem;
+}
+
+.info-card {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 1.15rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  box-shadow: var(--shadow-card);
+}
+
+.info-card-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+  border-bottom: 1px solid rgba(51, 65, 85, 0.7);
+  padding-bottom: 0.5rem;
+}
+
+.info-card-title {
+  margin: 0;
+  font-size: 1.08rem;
+  font-weight: 800;
+  color: var(--text-primary);
+}
+
+.info-card-meta {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--accent-gold);
+  background-color: rgba(245, 158, 11, 0.12);
+  border: 1px solid rgba(245, 158, 11, 0.4);
+  padding: 0.15rem 0.5rem;
+  border-radius: var(--radius-sm);
+}
+
+.info-card-desc {
+  margin: 0;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+.tier-steps {
+  margin: 0;
+  padding-left: 1.1rem;
+  color: var(--text-muted);
+  font-size: 0.86rem;
+}
+
+.tier-steps li + li {
+  margin-top: 0.2rem;
+}
+
+.tier-steps strong {
+  color: var(--accent-hex);
+}
+
+.stat-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.stat-pill {
+  font-size: 0.78rem;
+  font-weight: 600;
+  padding: 0.18rem 0.5rem;
+  border-radius: 4px;
+  background-color: var(--bg-primary);
+  border: 1px solid var(--border-color);
+  color: var(--accent-hex);
+}
